@@ -107,7 +107,25 @@
     </div>
     <div id="browser"></div>
 </div>
-<script>alert("bạn nên xoay ngang màn hình để chơi")</script>
+<script>
+    (function() {
+        // Hàm kiểm tra xem có phải thiết bị di động không
+        function isMobileDevice() {
+            // Kiểm tra dựa trên kích thước màn hình (dưới 768px được coi là di động)
+            if (window.innerWidth <= 768) {
+                return true;
+            }
+            // Kiểm tra dựa trên userAgent
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
+        }
+    
+        // Nếu là thiết bị di động, hiển thị thông báo
+        if (isMobileDevice()) {
+            alert("Hãy xoay ngang điện thoại để chơi");
+        }
+    })();
+    </script>
 <script src="scripts/all.js"></script>
 
 <script>
