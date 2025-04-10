@@ -46,7 +46,7 @@ input, textarea, select{
 	font-weight: inherit;
 }
 input, textarea, select{
-	*font-size: 100%;
+	font-size: 100%;
 }
 legend{
 	color: #000;
@@ -86,7 +86,7 @@ em{
 #extra, #view{
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 56%;
 	width: 640px;
 	height: 480px;
 	margin: -280px auto auto -320px;

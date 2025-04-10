@@ -371,7 +371,7 @@ define("scripts/layer.js", function(exports){
 		}else{
 			layer = Ucren.makeElement( "div", { "class": "layer", "style": "z-index: " + ( zindexs[name] || 0 ) + ";" } );
 			Ucren.Element( "extra" ).add( layer );
-			p = layers[name] = Raphael( layer, 640, 480 );
+			p = layers[name] = Raphael( layer, 680, 440 );
 			// if( Ucren.isSafari )
 			//     p.safari();
 			return p;
